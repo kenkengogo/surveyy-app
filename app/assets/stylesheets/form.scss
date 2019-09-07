@@ -1,0 +1,24 @@
+.newpage{
+  width:500px;
+  margin-left:300px;
+  margin-top: 150px;
+  .newpage__theme{
+    li{
+      margin-bottom: 15px;
+      margin-top: 40px;
+    }
+    
+    .newpage__theme__content{
+      margin-left:20px;
+
+    }
+    .newpage__theme__select{
+      margin-left:20px;
+      margin-bottom: 10px;
+
+    }
+    .newpage__theme__submit{
+      margin-top: 40px;
+    }
+  }
+}

@@ -1,0 +1,531 @@
+
+
+// .first{
+//   margin-top:20px;
+//   z-index: 2;
+//   display: block;
+//     width: 1400px;
+//     // min-height: 100px;
+
+
+//   &__title{
+//     font-size: 30px;
+//     text-align: center;
+//     color: #fffafa;
+//     margin-bottom: 15px;
+//   }
+//   .box4{
+//     width: 1400px;
+//     display:block;
+//     position:relative;
+//     margin-left:5%;
+//     margin-bottom: 170px;
+    
+//     .data{
+//       display: block;
+//       float:left;
+//       width:250px;
+//       min-height: 370px;
+//       margin-top: 50px;
+//       margin-left:30px;
+//       position:relative;
+//       background:  #fff;
+//       padding: 0.5em 1em;
+//       color: #474747;
+//       opacity: 0.98;
+//       z-index: 1;
+  
+
+//       a:link { 
+//         color:black;
+//         text-decoration: none;
+//       }
+//       a:visited { 
+//         color:black;
+//         text-decoration: none;
+//       }
+//       a:hover { 
+//         color:black;
+//         text-decoration: none;
+//       }
+//       a:active { 
+//         color: none; 
+//       } 
+//       .data-title{
+//         padding-top: 40px;
+//         margin-left:20px;
+//         font-size: 18px;
+//         display: inline-block;
+//         position:absolute;
+//       }
+//       .data-category1{
+//         width: 90px;
+//         top:0;
+//         right:0;
+//         margin-left:138px;
+//         display: inline-block;
+//         text-align: center;
+//         background-color: #87cefa;
+//         padding: 10px 20px;
+//         position:absolute;
+//         font-size: 14px;
+//       }
+//       .data-category2{
+//         width: 90px;
+//         top:0;
+//         right:0;
+//         margin-left:138px;
+//         display: inline-block;
+//         text-align: center;
+//         background-color: #87fad2;
+//         padding: 10px 20px;
+//         position:absolute;
+//         font-size: 14px;
+//       }
+//       .data-category3{
+//         width: 90px;
+//         top:0;
+//         right:0;
+//         margin-left:138px;
+//         display: inline-block;
+//         text-align: center;
+//         background-color: #453cec;
+//         padding: 10px 20px;
+//         position:absolute;
+//         font-size: 14px;
+//       }
+//       .data-category4{
+//         width: 90px;
+//         top:0;
+//         right:0;
+//         margin-left:138px;
+//         display: inline-block;
+//         text-align: center;
+//         background-color: #f887fa;
+//         padding: 10px 20px;
+//         position:absolute;
+//         font-size: 14px;
+//       }
+//       .data-category5{
+//         width: 90px;
+//         top:0;
+//         right:0;
+//         margin-left:138px;
+//         display: inline-block;
+//         text-align: center;
+//         background-color: #cafa87;
+//         padding: 10px 20px;
+//         position:absolute;
+//         font-size: 14px;
+//       }
+//       .data-category6{
+//         width: 90px;
+//         top:0;
+//         right:0;
+//         margin-left:138px;
+//         display: inline-block;
+//         text-align: center;
+//         background-color: #fae787;
+//         padding: 10px 20px;
+//         position:absolute;
+//         font-size: 14px;
+//       }
+//       .data-category7{
+//         width: 90px;
+//         top:0;
+//         right:0;
+//         margin-left:138px;
+//         display: inline-block;
+//         text-align: center;
+//         background-color: #87fac4;
+//         padding: 10px 20px;
+//         position:absolute;
+//         font-size: 14px;
+//       }
+//       .data-category8{
+//         width: 90px;
+//         top:0;
+//         right:0;
+//         margin-left:138px;
+//         display: inline-block;
+//         text-align: center;
+//         background-color: #fa87b5;
+//         padding: 10px 20px;
+//         position:absolute;
+//         font-size: 14px;
+//       }
+//       .data-category9{
+//         width: 90px;
+//         top:0;
+//         right:0;
+//         margin-left:138px;
+//         display: inline-block;
+//         text-align: center;
+//         background-color: #869e91;
+//         padding: 10px 20px;
+//         position:absolute;
+//         font-size: 14px;
+//       }
+//       .data-category10{
+//         width: 90px;
+//         top:0;
+//         right:0;
+//         margin-left:138px;
+//         display: inline-block;
+//         text-align: center;
+//         background-color: #a0fa87;
+//         padding: 10px 20px;
+//         position:absolute;
+//         font-size: 14px;
+//       }
+//       .data-category11{
+//         width: 90px;
+//         top:0;
+//         right:0;
+//         margin-left:138px;
+//         display: inline-block;
+//         text-align: center;
+//         background-color: #fa8787;
+//         padding: 10px 20px;
+//         position:absolute;
+//         font-size: 14px;
+//       }
+//       .data-category12{
+//         width: 90px;
+//         top:0;
+//         right:0;
+//         margin-left:138px;
+//         display: inline-block;
+//         text-align: center;
+//         background-color: #c487fa;
+//         padding: 10px 20px;
+//         position:absolute;
+//         font-size: 14px;
+//       }
+//       .data-category13{
+//         width: 90px;
+//         top:0;
+//         right:0;
+//         margin-left:138px;
+//         display: inline-block;
+//         text-align: center;
+//         background-color: #8791fa;
+//         padding: 10px 20px;
+//         position:absolute;
+//         font-size: 14px;
+//       }
+//       .data-text{
+//         width: 250px;
+//         height: 80px;
+//         margin-right: auto;
+//         margin-left:auto;
+//         margin-top: 200px;
+//         position:absolute;
+//         background-color: #fafdff;
+//         font-size: 13px;
+
+//         &__content{
+//           width:200px;
+//           height: 160px;
+//           margin-left:auto;
+//           margin-right:auto;
+//           margin-top: 20px;
+//         }
+//       }
+//       .data-count{
+//         position:absolute;
+//         margin-top: 290px;
+//         margin-left:90px;
+//         font-size: 20px;
+
+//       }
+//       .data-dislike{
+//         padding: 15px 20px;
+//         background-color: darkgray;
+//         display:inline-block;
+//         border-radius: 5px;
+//         margin-left:5px;
+//         margin-top:325px;
+//         position:absolute;
+//         a:link { 
+//           color:white;
+//           text-decoration: none;
+//         }
+//         a:visited { 
+//           color:white;
+//           text-decoration: none;
+//         }
+//         a:hover { 
+//           color:white;
+//           text-decoration: none;
+//         }
+//         a:active { 
+//           color: none; 
+//         } 
+//       }
+
+//       .data-like{
+//         padding: 15px 20px;
+//         background-color: #FF6666;
+//         display:block;
+//         border-radius: 5px;
+//         margin-left:5px;
+//         margin-top:325px;
+//         position:absolute;
+//         a:link { 
+//           color:white;
+//           text-decoration: none;
+//         }
+//         a:visited { 
+//           color:white;
+//           text-decoration: none;
+//         }
+//         a:hover { 
+//           color:white;
+//           text-decoration: none;
+//         }
+//         a:active { 
+//           color: none; 
+//         } 
+//       }
+//       .data-vote{
+//         padding: 15px 20px;
+//         background-color: #0033CC;
+//         color: white;
+//         display:block;
+//         border-radius: 5px;
+//         right:20px;
+//         margin-top:325px;
+//         position:absolute;
+//         cursor: pointer;
+//         cursor: hand;
+//         a:link { 
+//           color:white;
+//           text-decoration: none;
+//         }
+//         a:visited { 
+//           color:white;
+//           text-decoration: none;
+//         }
+//         a:hover { 
+//           color:white;
+//           text-decoration: none;
+//         }
+//         a:active { 
+//           color: none; 
+//         } 
+//       }
+//       .data-myq{
+//         padding: 15px 20px;
+//         background-color: #FFCCFF;
+//         display:inline-block;
+//         border-radius: 5px;
+//         margin-left:75px;
+//         margin-top:325px;
+//         position:absolute;
+//       }
+
+//       .data-block{
+//         display:inline-block;
+//         position:absolute;
+//         text-align: center;
+//         top:40px;
+//         left:0;
+//         width: 180px;
+//         height: 130px;
+//         margin-top: 50px;
+        
+//         .data-block-chart{
+//           display:inline-block;
+//         top: 0;
+//         left:0;
+//         width: 180px;
+//         height: 130px;
+//           position: absolute;
+//         }
+//       }
+//       .data-fukidashi{
+//         height:0;
+//         vertical-align: bottom;
+//         position:relative;
+//         margin-left: 165px;
+//         margin-top: 310px;
+//         display: inline-block;
+//         .data-fukidashi-words{
+          
+//           background-color: rgba(204, 252, 255, 0.811);
+//           padding: 10px 15px;
+//           min-width: 110px;
+//           text-align: center;
+//           z-index: 10;
+//           border-radius: 8px;
+//           position: absolute;
+//           bottom:0;
+
+//           a:link { 
+//             color: white; 
+//             text-decoration:none;
+//           }
+//           a:visited { 
+//             color: white;  
+//             text-decoration:none;
+//           }
+      
+//           a:hover { 
+//             color: white;; 
+//             opacity: 0.6;
+//             text-decoration: underline;
+//           }
+
+//           .data-fukidashi-words-word1{
+//             margin-right: auto;
+//             margin-left: auto;
+//             padding: 14px 25px;
+//             margin-top: 3px;
+//             background-color: gray;
+//             display:block;
+//             font-size: 15px;
+//             border-radius: 7px;
+            
+//           }
+
+//           .data-fukidashi-words-word1-1{
+//             padding: 14px 25px;
+//             margin-top: 3px;
+//             background-color: #5D99FF;
+//             display:block;
+//             font-size: 15px;
+//             border-radius: 7px;
+//             color: white;
+//           }
+//           .data-fukidashi-words-word2{
+//             margin-right: auto;
+//             margin-left: auto;
+//             padding: 14px 25px;
+//             margin-top: 3px;
+//             background-color: gray;
+//             display:block;
+//             font-size: 15px;
+//             border-radius: 7px;
+//             color: white;
+//           }
+//           .data-fukidashi-words-word2-1{
+//             padding: 14px 25px;
+//             margin-top: 3px;
+//             background-color: #FF6633;
+//             display:block;
+//             font-size: 15px;
+//             border-radius: 7px;
+//             margin-left: 10px;
+//             color: white;
+//           }
+
+//           .data-fukidashi-words-word3{
+//             margin-right: auto;
+//             margin-left: auto;
+//             padding: 15px 25px;
+//             margin-top: 3px;
+//             background-color: gray;
+//             display:inline-block;
+//             font-size: 15px;
+//             border-radius: 7px;
+//           }
+//           .data-fukidashi-words-word3-1{
+//             padding: 15px 25px;
+//             margin-top: 3px;
+//             background-color: #FFCC00;
+//             display:inline-block;
+//             font-size: 15px;
+//             border-radius: 7px;
+//             margin-left: 10px;
+//           }
+
+//           .data-fukidashi-words-word4{
+//             margin-right: auto;
+//             margin-left: auto;
+//             padding: 15px 25px;
+//             margin-top: 3px;
+//             background-color: gray;
+//             display:inline-block;
+//             font-size: 15px;
+//             border-radius: 7px;
+//           }
+//           .data-fukidashi-words-word4-1{
+//             padding: 15px 25px;
+//             margin-top: 3px;
+//             background-color: #33CC00;
+//             display:inline-block;
+//             font-size: 15px;
+//             border-radius: 7px;
+//             margin-left: 10px;
+//           }
+
+//           .data-fukidashi-words-word5{
+//             margin-right: auto;
+//             margin-left: auto;
+//             padding: 15px 25px;
+//             margin-top: 3px;
+//             background-color: gray;
+//             display:inline-block;
+//             font-size: 15px;
+//             border-radius: 7px;
+//           }
+//           .data-fukidashi-words-word5-1{
+//             padding: 15px 25px;
+//             margin-top: 3px;
+//             background-color: #9933CC;
+//             display:inline-block;
+//             font-size: 15px;
+//             border-radius: 7px;
+//             margin-left: 10px;
+//           }
+//         }
+//         .data-fukidashi-words:before{
+//           content: "";
+//           position: absolute;
+//           top: 100%;
+//           left: 50%;
+//           margin-left: -43px;
+//           border: 15px solid transparent;
+//           border-top: 15px solid #e0edff;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+
+.mypage-button{
+  margin-top: 150px;
+  padding: 20px 30px;
+  background-color: #4682b4;
+  font-size: 30px;
+  display: inline-block;
+  border-radius: 7px;
+  margin-left: 40%;
+  z-index: 5;
+
+  a:link { 
+    color:white;
+    text-decoration: none;
+  }
+  a:visited { 
+    color:white;
+    text-decoration: none;
+  }
+  a:hover { 
+    color:white;
+    text-decoration: none;
+  }
+  a:active { 
+    color: none; 
+  } 
+}
+
+
+
+
+
+
+  

@@ -1,0 +1,17 @@
+
+.mypage-button
+  = link_to  "アンケート投稿", new_question_path(current_user.id)
+
+.first
+  .first__title
+    My Posts
+    .first__title__sub
+      投稿一覧
+  = render 'layouts/product', questions: @questions
+
+.first
+  .first__title
+    My Faviorite
+    .first__title__sub
+      お気に入り一覧
+  = render 'layouts/product', questions: @question_likes

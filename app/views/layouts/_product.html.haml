@@ -1,0 +1,39 @@
+.box4
+  - questions.each_with_index do |data|
+    .box7
+      .data
+        = link_to question_path(data.id) do
+          .data__title
+            = data.title
+          %h3{:class => "data__category#{data.category_id}"}
+            = data.category.name
+          .data__text
+            .data-text__content
+              = data.text
+          .data__count
+            票数 :
+            = data.votes.count
+        -if user_signed_in?
+          -if data.likes.find_by(user_id: current_user.try(:id))
+            .data__dislike
+              お気に入り済み
+            .data__vote
+              投票
+            .data__fukidashi
+              .data__fukidashi__words
+                = render partial: "layouts/word", locals:{val: data}
+          -elsif data.user_id != current_user.id then
+            .data__like
+              = link_to "お気に入り登録", question_likes_path(data), method: :post
+            .data__vote
+              投票
+            .data__fukidashi
+              .data__fukidashi__words
+                = render partial: "layouts/word", locals:{val: data}
+          - else
+            .data__myq
+              私の投稿
+        .data__block
+          .data__block__chart
+            = pie_chart ({ data.word1=> data.votes.where(ballot: 1).count, data.word2=>  data.votes.where(ballot: 2).count, data.word3=>  data.votes.where(ballot: 3).count, data.word4=>  data.votes.where(ballot: 4).count, data.word5=>  data.votes.where(ballot: 5).count}), width: "180px", height: "90px", library: {backgroundColor: "none", chartArea: {width: '100%', height: '100%'}}
+    

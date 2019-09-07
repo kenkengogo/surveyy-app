@@ -1,0 +1,19 @@
+body{
+  height: 100vh;
+  position: relative;
+  background-color: #f2f2f2;
+  z-index: 1;
+
+  .wrap{
+    overflow: hidden;
+  }
+}
+
+@import "reset";
+@import "normalize";
+@import "questions";
+@import "header";
+@import "user-show";
+@import "form";
+@import "index";
+@import "devise";

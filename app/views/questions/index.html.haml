@@ -1,0 +1,28 @@
+.top
+  .top__image
+    %img{alt: "", src: "#{asset_path "circle.png"}",  width:'500px'}
+      .top__image__text
+        Which is the majority?
+.explain
+  .explain__title
+    Announce
+    .explain__title__sub
+      ご挨拶
+  .explain__text
+    この度当ホームページにお越し頂き誠にありがとうございます。
+    当ホームページは世間の方々が何を好み、考え、どのような選択を行うかをアンケートとして集計したデータを皆様で作り上げていくサービスとなっております。
+    日頃のふとした疑問はもちろんのこと、ビジネスをするに当たってより戦略的に事業を展開していく際の参考にしていただくことも可能です。
+    それではごゆるりとご覧下さいませ。
+.first
+  .first__title
+    New Survey
+    .first__title__sub
+      新着一覧
+
+  = render 'layouts/product', questions: @questions
+
+  .first__title
+    Popular Survey
+    .first__title__sub
+      今話題のアンケート
+  = render 'layouts/product', questions: @ranking
