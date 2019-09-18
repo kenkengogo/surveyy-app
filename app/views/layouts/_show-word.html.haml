@@ -1,0 +1,57 @@
+-if user_signed_in?
+  -if val.user_id !=current_user.id
+    -if val.vote_user(current_user.try(:id), 1) 
+      .show__data__fukidashi__words__word1#word1
+        = link_to "#{val.word1}", question_vote_path(val, val.votes.find_by(user_id: current_user.id)), method: :delete
+    - elsif val.vote_user(current_user.try(:id), 2 ) || val.vote_user(current_user.try(:id), 3 ) || val.vote_user(current_user.try(:id), 4 ) || val.vote_user(current_user.try(:id), 5 )
+      .datanone
+    -else
+      .show__data__fukidashi__words__word1-1#word1
+        = link_to "#{val.word1}", question_votes_path(val.id, ballot: 1), controller: "votes", action: "create", ballot: 1, method: :post
+
+
+    -if val.vote_user(current_user.try(:id), 2) 
+      .show__data__fukidashi__words__word2#word2
+        = link_to "#{val.word2}", question_vote_path(val, val.votes.find_by(user_id: current_user.id)), method: :delete
+    - elsif val.vote_user(current_user.try(:id), 1 ) || val.vote_user(current_user.try(:id), 3 ) || val.vote_user(current_user.try(:id), 4) || val.vote_user(current_user.try(:id), 5)
+      .datanone
+    -else
+      .show__data__fukidashi__words__word2-1#word2
+        = link_to "#{val.word2}", question_votes_path(val.id, ballot: 2), controller: "votes", action: "create", ballot: 2, method: :post
+     
+
+    -if val.word3.present?
+      -if val.vote_user(current_user.try(:id), 3) 
+        .show__data__fukidashi__words__word3#word3
+          = link_to "#{val.word3}", question_vote_path(val, val.votes.find_by(user_id: current_user.id)), method: :delete, remote: true
+      - elsif val.vote_user(current_user.try(:id), 1) || val.vote_user(current_user.try(:id), 2) || val.vote_user(current_user.try(:id), 4) || val.vote_user(current_user.try(:id), 5)
+        .datanone
+      -else
+        .show__data__fukidashi__words__word3-1#word3
+          = link_to "#{val.word3}", question_votes_path(val.id, ballot: 3), controller: "votes", action: "create", ballot: 3, method: :post
+       
+
+
+    -if val.word4.present?
+      -if val.vote_user(current_user.try(:id), 4) 
+        .show__data__fukidashi__words__word4#word4
+          = link_to "#{val.word4}", question_vote_path(val, val.votes.find_by(user_id: current_user.id)), method: :delete
+      - elsif val.vote_user(current_user.try(:id), 1) || val.vote_user(current_user.try(:id), 2) || val.vote_user(current_user.try(:id), 3) || val.vote_user(current_user.try(:id), 5)
+        .datanone
+      -else
+        .show__data__fukidashi__words__word4-1#word4
+          = link_to "#{val.word4}", question_votes_path(val.id, ballot: 4), controller: "votes", action: "create", ballot: 4, method: :post
+      
+
+    -if val.word5.present?
+      -if val.vote_user(current_user.try(:id), 5) 
+        .show__data-fukidashi-words-word5#word5
+          = link_to "#{val.word5}", question_vote_path(val, val.votes.find_by(user_id: current_user.id)), method: :delete
+      - elsif val.vote_user(current_user.try(:id), 1) || val.vote_user(current_user.try(:id), 2) || val.vote_user(current_user.try(:id), 3) || val.vote_user(current_user.try(:id), 4) 
+        .datanone
+      -else
+        .show__data__fukidashi__words__word5-1#word5
+          = link_to "#{val.word5}", question_votes_path(val.id, ballot: 5), controller: "votes", action: "create", ballot: 5, method: :post
+  - else
+    .show__data__fukidashi__words__none
+  

@@ -20,7 +20,28 @@ class QuestionsController < ApplicationController
   end
 
   def show
+    @question = Question.find(params[:id])
   end
+
+  def edit
+    @question = Question.find(params[:id])
+    @categories = Category.all.order('id DESC')
+  end
+
+  def update
+    @question = Question.update(question_params)
+      redirect_to questions_path
+
+  end
+
+  def destroy
+    @question = Question.find(params[:id])
+    if @question.user_id = current_user.id
+      @question.destroy
+      redirect_to questions_path
+    end
+  end
+
 
   def search
   end

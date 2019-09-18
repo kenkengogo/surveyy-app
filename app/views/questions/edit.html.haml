@@ -1,0 +1,30 @@
+.newpage
+  .newpage__theme
+    = form_with(model: @question, url: "/questions/#{@question.id}", local: true) do |f|
+      %li
+        =f.label :name, "タイトル"
+      .newpage__theme__content
+        =f.text_field :title, placeholder: "タイトルを入力ください", size: "60"
+      %li
+        =f.label :name, "カテゴリ"
+      .newpage__theme__content
+        = f.collection_select :category_id, @categories, :id, :name, {prompt: "選択してください"}
+      %li
+        =f.label :name, "アンケート内容"
+      .newpage__theme__content
+        =f.text_area :text, placeholder: "アンケートをとりたい内容をご記入ください",  rows:"4", cols:"60"
+      %li
+        =f.label :name, "比較項目"
+      .newpage__theme__select
+        =f.text_field :word1, placeholder: "比較したい項目を入力ください", size: "50"
+      .newpage__theme__select
+        =f.text_field :word2, placeholder: "比較したい項目を入力ください", size: "50"
+      .newpage__theme__select
+        =f.text_field :word3, placeholder: "比較したい項目を入力ください", size: "50"
+      .newpage__theme__select
+        =f.text_field :word4, placeholder: "比較したい項目を入力ください", size: "50"
+      .newpage__theme__select
+        =f.text_field :word5, placeholder: "比較したい項目を入力ください", size: "50"
+      .newpage__theme__submit
+        = f.submit "送信する", class: "" 
+

@@ -1,0 +1,40 @@
+.show__data
+  .show__data__title
+    = @question.title
+  %h3{:class => "show__data__category#{@question.category_id}"}
+    = @question.category.name
+  .show__data__text
+    .data-text__content
+      = @question.text
+  .show__data__count
+    票数 :
+    = @question.votes.count
+  -if user_signed_in?
+    -if @question.likes.find_by(user_id: current_user.try(:id))
+      .show__data__dislike
+        お気に入り済み
+      .show__data__vote
+        投票
+      .show__data__fukidashi
+        .show__data__fukidashi__words
+          = render partial: "layouts/show-word", locals:{val: @question}
+    -elsif @question.user_id != current_user.id then
+      .show__data__like
+        = link_to "お気に入り登録", question_likes_path(@question), method: :post
+      .show__data__vote
+        投票
+      .show__data__fukidashi
+        .show__data__fukidashi__words
+          = render partial: "layouts/show-word", locals:{val: @question}
+    - else
+      .show__data__myq
+        私の投稿
+      .show__data__edit
+        = link_to "編集", edit_question_path(@question), method: :get
+      .show__data__delete
+        = link_to "削除", "/questions/#{@question.id}", method: :delete
+  .show__data__block
+    .show__data__block__chart
+      = pie_chart ({ @question.word1=> @question.votes.where(ballot: 1).count, @question.word2=>  @question.votes.where(ballot: 2).count, @question.word3=>  @question.votes.where(ballot: 3).count, @question.word4=>  @question.votes.where(ballot: 4).count, @question.word5=>  @question.votes.where(ballot: 5).count}), width: "350px", height: "350px", library: {backgroundColor: "none", chartArea: {width: '100%', height: '100%'}}
+
+-# = render partial: "layouts/comment", locals:{val: @question}
