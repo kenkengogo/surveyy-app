@@ -404,6 +404,32 @@
           position:absolute;
         }
 
+        &__login{
+          padding: 15px 20px;
+          background-color: rgba(148, 157, 128, 0.756);
+          display:inline-block;
+          border-radius: 5px;
+          margin-left:12px;
+          margin-top:315px;
+          position:absolute;
+          color: white;
+          a:link { 
+            color:white;
+            text-decoration: none;
+          }
+          a:visited { 
+            color:white;
+            text-decoration: none;
+          }
+          a:hover { 
+            color:white;
+            text-decoration: none;
+          }
+          a:active { 
+            color: none; 
+          } 
+        }
+
         &__block{
           display:inline-block;
           position:absolute;

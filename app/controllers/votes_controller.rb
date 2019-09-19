@@ -11,5 +11,5 @@ class VotesController < ApplicationController
     vote.destroy
     redirect_to questions_path
   end
-
+  
 end

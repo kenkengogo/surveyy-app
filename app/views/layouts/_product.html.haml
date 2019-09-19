@@ -33,6 +33,9 @@
           - else
             .data__myq
               私の投稿
+        -else
+          .data__login
+            =link_to  "投票したければログイン！", new_user_session_path, class: 'get'
         .data__block
           .data__block__chart
             = pie_chart ({ data.word1=> data.votes.where(ballot: 1).count, data.word2=>  data.votes.where(ballot: 2).count, data.word3=>  data.votes.where(ballot: 3).count, data.word4=>  data.votes.where(ballot: 4).count, data.word5=>  data.votes.where(ballot: 5).count}), width: "180px", height: "90px", library: {backgroundColor: "none", chartArea: {width: '100%', height: '100%'}}

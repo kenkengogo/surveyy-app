@@ -30,8 +30,6 @@
         .show__data__fukidashi__words__word3-1#word3
           = link_to "#{val.word3}", question_votes_path(val.id, ballot: 3), controller: "votes", action: "create", ballot: 3, method: :post
        
-
-
     -if val.word4.present?
       -if val.vote_user(current_user.try(:id), 4) 
         .show__data__fukidashi__words__word4#word4
@@ -52,6 +50,31 @@
       -else
         .show__data__fukidashi__words__word5-1#word5
           = link_to "#{val.word5}", question_votes_path(val.id, ballot: 5), controller: "votes", action: "create", ballot: 5, method: :post
-  - else
-    .show__data__fukidashi__words__none
-  
+  -else
+    .show__data__fukidashi__words__word-ex
+      #{val.word1}
+    .show__data__fukidashi__words__word-ex
+      #{val.word2}
+    -if val.word3.present?
+      .show__data__fukidashi__words__word-ex
+        #{val.word3}
+    -if val.word4.present?
+      .show__data__fukidashi__words__word-ex
+        #{val.word4}
+    -if val.word5.present?
+      .show__data__fukidashi__words__word-ex
+        #{val.word5}
+- else
+  .show__data__fukidashi__words__word-ex
+    #{val.word1}
+  .show__data__fukidashi__words__word-ex
+    #{val.word2}
+  -if val.word3.present?
+    .show__data__fukidashi__words__word-ex
+      #{val.word3}
+  -if val.word4.present?
+    .show__data__fukidashi__words__word-ex
+      #{val.word4}
+  -if val.word5.present?
+    .show__data__fukidashi__words__word-ex
+      #{val.word5}

@@ -6,7 +6,6 @@
   background-color: transparent;
   margin-bottom: 100px;
   z-index: 3;
-  
 
   a:link { 
     color:#888888;
@@ -32,7 +31,7 @@
     width:150px;
     display: inline-block;
     position: absolute;
-    margin-left: 74%;
+    margin-left: 74.5%;
     margin-top: 8px;
     color:#888888;
   
@@ -64,13 +63,10 @@
       }
     }
   }
-  &__search{
-    
-  }
   &__login{
     display: inline-block;
     position: absolute;
-    margin-left: 88%;
+    margin-left: 82%;
     margin-top: 8px;
   }
   &__logout{

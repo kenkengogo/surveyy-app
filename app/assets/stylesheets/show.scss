@@ -1,5 +1,5 @@
 .show__data{
-  width:880px;
+  width:750px;
   height: 550px;
   margin-right: auto;
   margin-left: auto;
@@ -192,7 +192,7 @@
   }
   &__count{
     position:absolute;
-    margin-top: 200px;
+    margin-top: 210px;
     margin-left:120px;
     font-size: 20px;
   }
@@ -203,8 +203,34 @@
     display:inline-block;
     border-radius: 5px;
     margin-left:100px;
-    margin-top:240px;
+    margin-top:260px;
     position:absolute;
+  }
+
+  &__login{
+    padding: 15px 20px;
+    background-color: rgba(148, 157, 128, 0.756);
+    display:inline-block;
+    border-radius: 5px;
+    margin-left:50px;
+    margin-top:260px;
+    position:absolute;
+    color: white;
+    a:link { 
+      color:white;
+      text-decoration: none;
+    }
+    a:visited { 
+      color:white;
+      text-decoration: none;
+    }
+    a:hover { 
+      color:white;
+      text-decoration: none;
+    }
+    a:active { 
+      color: none; 
+    } 
   }
 
   &__edit{
@@ -212,16 +238,50 @@
     padding: 15px 20px;
     background: gray;
     color: white;
-    margin-left:80px;
-    margin-top:430px;
+    margin-left:160px;
+    margin-top:120px;
+    border-radius: 5px;
+    position:absolute;
+    a:link { 
+      color:white;
+      text-decoration: none;
+    }
+    a:visited { 
+      color:white;
+      text-decoration: none;
+    }
+    a:hover { 
+      color:white;
+      text-decoration: none;
+    }
+    a:active { 
+      color: none; 
+    } 
   }
   &__delete{
     display: inline-block;
     color: white;
     padding: 15px 20px;
     background: black;
-    margin-left:10px;
-    margin-top:430px;
+    margin-left:80px;
+    margin-top:120px;
+    border-radius: 5px;
+    position:absolute;
+    a:link { 
+      color:white;
+      text-decoration: none;
+    }
+    a:visited { 
+      color:white;
+      text-decoration: none;
+    }
+    a:hover { 
+      color:white;
+      text-decoration: none;
+    }
+    a:active { 
+      color: none; 
+    } 
   }
 
   &__dislike{
@@ -230,7 +290,7 @@
     display:inline-block;
     border-radius: 5px;
     margin-left:80px;
-    margin-top:240px;
+    margin-top:260px;
     position:absolute;
     a:link { 
       color:white;
@@ -255,7 +315,7 @@
     display:block;
     border-radius: 5px;
     margin-left:80px;
-    margin-top:240px;
+    margin-top:260px;
     position:absolute;
     a:link { 
       color:white;
@@ -283,7 +343,6 @@
 
     &__words{
 
-
       a:link { 
         color: white; 
         text-decoration:none;
@@ -308,7 +367,6 @@
         display:inline-block;
         font-size: 15px;
         border-radius: 7px;
-        
       }
 
       &__word1-1{
@@ -320,6 +378,7 @@
         border-radius: 7px;
         color: white;
       }
+
       &__word2{
         margin-right: auto;
         margin-left: auto;
@@ -397,20 +456,24 @@
         font-size: 15px;
         border-radius: 7px;
       }
+      &__word-ex{
+        padding: 14px 25px;
+        margin-top: 3px;
+        background-color: rgba(216, 215, 215, 0.605);
+        display:inline-block;
+        font-size: 15px;
+        border-radius: 7px;
+        color: rgba(122, 120, 120, 0.715);
+      }
     }
-
   }
 
   &__block{
     display:block;
     position:absolute;
-    // text-align: center;
     top:40px;
-    
-    margin-left: 340px;
-    // margin-top: 20px;
+    margin-left: 380px;
     z-index: 3;
-  
     &-chart{
       display:block;
     top: 0;
@@ -432,13 +495,8 @@
   z-index: 1;
   &__title{
     width: 800px;
-    // height: 80px;
     padding-top: 50px;
     padding-left: 50px;
     font-size: 24px;
-  }
-
-  &__text{
-
   }
 }
